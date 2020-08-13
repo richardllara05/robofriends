@@ -1,14 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import * as serviceWorker from './serviceWorker';
+import App from './containers/App';
+import 'tachyons';
+
+// React has
+// 1. Component
+// 2. State
+// 3. Children
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <div className="tc">
+      <App />
+    </div>
   </React.StrictMode>,
-  document.getElementById('root')
+  document.querySelector('#root')
 );
 
 // If you want your app to work offline and load faster, you can change
